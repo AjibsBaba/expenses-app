@@ -20,7 +20,7 @@ class TransactionList extends StatelessWidget {
                 decoration: BoxDecoration(
                     border: Border.all(width: 0.3, color: Colors.black)),
                 padding: const EdgeInsets.all(10),
-                child: Text('\$${tx.amount}'),
+                child: Text('\$${tx.amount.toStringAsFixed(2)}'),
               ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
